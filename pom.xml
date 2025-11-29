@@ -26,9 +26,16 @@
 		<guava.version>28.2-jre</guava.version>
 		<jsoup.version>1.11.3</jsoup.version>
 		<xsoup.version>0.3.1</xsoup.version>
+		<nashorn.version>15.4</nashorn.version>
 	</properties>
 
 	<dependencies>
+		<!-- 解决Java 11+兼容性问题 - nashorn替代 -->
+		<dependency>
+			<groupId>org.openjdk.nashorn</groupId>
+			<artifactId>nashorn-core</artifactId>
+			<version>${nashorn.version}</version>
+		</dependency>
 		<!-- spring-boot相关配置 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
