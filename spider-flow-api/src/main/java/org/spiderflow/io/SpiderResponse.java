@@ -6,7 +6,7 @@ import java.util.Map;
 import org.spiderflow.annotation.Comment;
 import org.spiderflow.annotation.Example;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 
 public interface SpiderResponse {
 

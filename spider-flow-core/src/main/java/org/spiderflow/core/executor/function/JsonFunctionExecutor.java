@@ -5,7 +5,7 @@ import org.spiderflow.annotation.Example;
 import org.spiderflow.executor.FunctionExecutor;
 import org.springframework.stereotype.Component;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 
 /**
  * Json和String互相转换 工具类 防止NPE 

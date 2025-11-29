@@ -9,7 +9,7 @@ import org.spiderflow.core.model.Function;
 import org.spiderflow.core.script.ScriptManager;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import javax.script.ScriptEngine;
 import java.io.Serializable;
 

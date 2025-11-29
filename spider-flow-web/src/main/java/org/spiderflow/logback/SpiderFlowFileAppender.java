@@ -10,8 +10,12 @@ import org.spiderflow.core.job.SpiderJobContext;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class SpiderFlowFileAppender extends FileAppender<ILoggingEvent> {
+
+    private final Lock lock = new ReentrantLock();
 
     @Override
     protected void subAppend(ILoggingEvent event) {

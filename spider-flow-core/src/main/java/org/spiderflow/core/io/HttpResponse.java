@@ -1,6 +1,6 @@
 package org.spiderflow.core.io;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
 import org.spiderflow.io.SpiderResponse;

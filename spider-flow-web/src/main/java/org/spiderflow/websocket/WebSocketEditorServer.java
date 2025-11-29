@@ -1,17 +1,17 @@
 package org.spiderflow.websocket;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson2.JSONObject;
 import org.spiderflow.core.Spider;
 import org.spiderflow.core.utils.SpiderFlowUtils;
 import org.spiderflow.model.SpiderWebSocketContext;
 import org.spiderflow.model.WebSocketEvent;
 import org.springframework.stereotype.Component;
 
-import javax.websocket.OnClose;
-import javax.websocket.OnMessage;
-import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.websocket.OnClose;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.Session;
+import jakarta.websocket.server.ServerEndpoint;
 
 /**
  * WebSocket通讯编辑服务

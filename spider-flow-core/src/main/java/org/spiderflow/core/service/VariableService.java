@@ -6,7 +6,7 @@ import org.spiderflow.core.mapper.VariableMapper;
 import org.spiderflow.core.model.Variable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.io.Serializable;
 import java.util.Map;
 import java.util.stream.Collectors;

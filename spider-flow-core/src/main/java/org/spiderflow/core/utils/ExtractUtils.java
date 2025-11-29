@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import com.alibaba.fastjson.JSONPath;
+import com.alibaba.fastjson2.JSONPath;
 import us.codecraft.xsoup.Xsoup;
 
 /**

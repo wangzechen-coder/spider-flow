@@ -3,7 +3,7 @@ package org.spiderflow.core.expression;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 
 import org.apache.commons.lang3.StringUtils;
 import org.spiderflow.ExpressionEngine;

@@ -8,7 +8,7 @@ import org.spiderflow.core.utils.ExtractUtils;
 import org.spiderflow.executor.FunctionExtension;
 import org.springframework.stereotype.Component;
 
-import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson2.JSON;
 
 @Component
 public class ObjectFunctionExtension implements FunctionExtension{

@@ -1,0 +1,164 @@
+2025-11-29 23:52:48.763 INFO  org.spiderflow.SpiderApplication - Starting SpiderApplication using Java 17.0.17 with PID 7531 (/Users/wzc/workSpace/code/person/spider-flow/spider-flow-web/target/classes started by wzc in /Users/wzc/workSpace/code/person/spider-flow)
+2025-11-29 23:52:48.766 INFO  org.spiderflow.SpiderApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-29 23:52:49.172 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8088 (http)
+2025-11-29 23:52:49.177 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-11-29 23:52:49.177 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-29 23:52:49.177 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-29 23:52:49.194 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-29 23:52:49.195 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 409 ms
+2025-11-29 23:52:49.320 ERROR c.baomidou.mybatisplus.core.MybatisConfiguration - mapper[org.spiderflow.core.mapper.SpiderFlowMapper.resetNextExecuteTime] is ignored, because it exists, maybe from xml file
+2025-11-29 23:52:49.481 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-29 23:52:49.541 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@271e851e
+2025-11-29 23:52:49.542 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-29 23:52:49.629 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2025-11-29 23:52:49.633 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-29 23:52:49.633 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+2025-11-29 23:52:49.633 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2025-11-29 23:52:49.634 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-29 23:52:49.634 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-29 23:52:49.634 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+2025-11-29 23:52:49.634 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@120d6cbf
+2025-11-29 23:52:49.692 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-29 23:52:49.787 INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@324dcd31
+2025-11-29 23:52:49.823 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-11-29 23:52:49.829 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8088 (http) with context path '/'
+2025-11-29 23:52:49.830 INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2025-11-29 23:52:49.830 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-29 23:52:49.833 INFO  org.spiderflow.SpiderApplication - Started SpiderApplication in 1.244 seconds (process running for 1.803)
+2025-11-29 23:53:07.910 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-11-29 23:53:07.912 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-29 23:53:07.915 INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-29 23:53:07.918 INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2025-11-29 23:53:07.918 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2025-11-29 23:53:07.918 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-11-29 23:53:07.919 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2025-11-29 23:53:07.919 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-29 23:53:07.921 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-29 23:53:26.334 INFO  org.spiderflow.SpiderApplication - Starting SpiderApplication using Java 17.0.17 with PID 7708 (/Users/wzc/workSpace/code/person/spider-flow/spider-flow-web/target/classes started by wzc in /Users/wzc/workSpace/code/person/spider-flow)
+2025-11-29 23:53:26.336 INFO  org.spiderflow.SpiderApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-29 23:53:26.694 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8088 (http)
+2025-11-29 23:53:26.698 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2025-11-29 23:53:26.698 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-29 23:53:26.698 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-29 23:53:26.713 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-29 23:53:26.713 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 359 ms
+2025-11-29 23:53:26.816 ERROR c.baomidou.mybatisplus.core.MybatisConfiguration - mapper[org.spiderflow.core.mapper.SpiderFlowMapper.resetNextExecuteTime] is ignored, because it exists, maybe from xml file
+2025-11-29 23:53:26.949 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-29 23:53:27.017 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@350f18a6
+2025-11-29 23:53:27.018 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-29 23:53:27.104 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2025-11-29 23:53:27.108 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-11-29 23:53:27.108 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v2.5.0 created.
+2025-11-29 23:53:27.108 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2025-11-29 23:53:27.108 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.5.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-11-29 23:53:27.108 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-11-29 23:53:27.108 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.5.0
+2025-11-29 23:53:27.108 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@432a6a69
+2025-11-29 23:53:27.166 INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-11-29 23:53:27.260 INFO  c.b.m.e.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@324dcd31
+2025-11-29 23:53:27.296 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2025-11-29 23:53:27.302 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8088 (http) with context path '/'
+2025-11-29 23:53:27.302 INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2025-11-29 23:53:27.303 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-11-29 23:53:27.306 INFO  org.spiderflow.SpiderApplication - Started SpiderApplication in 1.143 seconds (process running for 1.506)
+2025-11-29 23:53:41.724 INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_e98f2eab6ceb8688bc6d8fc5332ff093=1757503978,1757505371,1757574098,1757577745;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-11-29 23:53:41.728 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-29 23:53:41.728 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-29 23:53:41.728 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-11-29 23:53:59.807 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#pnull
+2025-11-29 23:54:00.075 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.076 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p1
+2025-11-29 23:54:00.200 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.200 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p2
+2025-11-29 23:54:00.313 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.313 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p3
+2025-11-29 23:54:00.429 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.429 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p4
+2025-11-29 23:54:00.545 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.545 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p5
+2025-11-29 23:54:00.683 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.683 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p6
+2025-11-29 23:54:00.788 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.788 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p7
+2025-11-29 23:54:00.916 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:00.916 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p8
+2025-11-29 23:54:01.032 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.032 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p9
+2025-11-29 23:54:01.200 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.200 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p10
+2025-11-29 23:54:01.302 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.302 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p11
+2025-11-29 23:54:01.431 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.431 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p12
+2025-11-29 23:54:01.573 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.573 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p13
+2025-11-29 23:54:01.709 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.709 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p14
+2025-11-29 23:54:01.833 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p15
+2025-11-29 23:54:01.833 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.988 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:01.988 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p16
+2025-11-29 23:54:02.112 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:02.112 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p17
+2025-11-29 23:54:02.230 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:02.231 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p18
+2025-11-29 23:54:02.356 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:02.356 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p19
+2025-11-29 23:54:02.475 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:02.567 INFO  org.spiderflow.core.Spider - 测试完毕！
+2025-11-29 23:54:46.766 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#pnull
+2025-11-29 23:54:47.100 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.100 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p1
+2025-11-29 23:54:47.223 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.223 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p2
+2025-11-29 23:54:47.338 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.338 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p3
+2025-11-29 23:54:47.462 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.462 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p4
+2025-11-29 23:54:47.568 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.569 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p5
+2025-11-29 23:54:47.682 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.683 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p6
+2025-11-29 23:54:47.787 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.790 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p7
+2025-11-29 23:54:47.901 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:47.901 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p8
+2025-11-29 23:54:48.028 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.029 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p9
+2025-11-29 23:54:48.148 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.149 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p10
+2025-11-29 23:54:48.271 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.272 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p11
+2025-11-29 23:54:48.399 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.399 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p12
+2025-11-29 23:54:48.504 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.504 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p13
+2025-11-29 23:54:48.611 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.612 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p14
+2025-11-29 23:54:48.722 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.722 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p15
+2025-11-29 23:54:48.831 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.832 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p16
+2025-11-29 23:54:48.947 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:48.947 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p17
+2025-11-29 23:54:49.075 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:49.075 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p18
+2025-11-29 23:54:49.190 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:49.190 INFO  o.spiderflow.core.executor.shape.RequestExecutor - 设置请求url:https://www.cnblogs.com/#p19
+2025-11-29 23:54:49.319 INFO  org.spiderflow.core.Spider - 获取循环次数${list.length(articlelist)}=20
+2025-11-29 23:54:49.730 INFO  org.spiderflow.core.Spider - 测试完毕！
