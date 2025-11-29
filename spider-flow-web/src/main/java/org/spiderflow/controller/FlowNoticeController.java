@@ -23,7 +23,7 @@ public class FlowNoticeController {
 
 	@RequestMapping("/save")
 	public JsonBean<FlowNotice> save(FlowNotice entity) {
-		if (StringUtils.isEmpty(entity.getId())) {
+		if (!StringUtils.hasText(entity.getId())) {
 			return new JsonBean<FlowNotice>(0, "流程id不能为空");
 		}
 		try {

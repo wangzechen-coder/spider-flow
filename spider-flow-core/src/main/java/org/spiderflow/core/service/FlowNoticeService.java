@@ -1,9 +1,10 @@
 package org.spiderflow.core.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -27,7 +28,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 @Service
-public class FlowNoticeService extends ServiceImpl<FlowNoticeMapper, FlowNotice> {
+public class FlowNoticeService extends ServiceImpl<FlowNoticeMapper, FlowNotice> implements IService<FlowNotice> {
+	
+	@Override
+	public FlowNoticeMapper getBaseMapper() {
+		return super.getBaseMapper();
+	}
 
 	private static final Logger logger = LoggerFactory.getLogger(FlowNoticeService.class);
 	@Autowired
@@ -125,8 +131,8 @@ public class FlowNoticeService extends ServiceImpl<FlowNoticeMapper, FlowNotice>
 	}
 
 	private String getCurrentDate() {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		return sdf.format(new Date());
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+		return LocalDateTime.now().format(formatter);
 	}
 
 }

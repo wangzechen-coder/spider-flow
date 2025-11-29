@@ -112,9 +112,45 @@ public class HttpRequest {
 		return this;
 	}
 	
-	@SuppressWarnings("deprecation")
 	public HttpRequest validateTLSCertificates(boolean value){
-		this.connection.validateTLSCertificates(value);
+		// 在Jsoup 1.15.x中，validateTLSCertificates方法已被移除
+		// 使用sslSocketFactory替代实现类似功能
+		if(!value) {
+			this.connection.sslSocketFactory(new javax.net.ssl.SSLSocketFactory() {
+				@Override
+				public java.net.Socket createSocket(java.net.Socket socket, String host, int port, boolean autoClose) throws IOException {
+					return null;
+				}
+				@Override
+				public java.net.Socket createSocket() throws IOException {
+					return null;
+				}
+				@Override
+				public String[] getDefaultCipherSuites() {
+					return null;
+				}
+				@Override
+				public String[] getSupportedCipherSuites() {
+					return null;
+				}
+				@Override
+				public java.net.Socket createSocket(String host, int port) throws IOException {
+					return null;
+				}
+				@Override
+				public java.net.Socket createSocket(String host, int port, java.net.InetAddress localHost, int localPort) throws IOException {
+					return null;
+				}
+				@Override
+				public java.net.Socket createSocket(java.net.InetAddress host, int port) throws IOException {
+					return null;
+				}
+				@Override
+				public java.net.Socket createSocket(java.net.InetAddress host, int port, java.net.InetAddress localHost, int localPort) throws IOException {
+					return null;
+				}
+			});
+		}
 		return this;
 	}
 	

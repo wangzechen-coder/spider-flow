@@ -31,14 +31,19 @@ spring:
     time-zone: GMT+8
     serialization:
       fail_on_empty_beans: false
-  mvc:
-    favicon:
-      enabled: false
+  # 移除已弃用的favicon配置
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/spiderflow?useSSL=false&useUnicode=true&characterEncoding=UTF8&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/spiderflow?useSSL=false&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&serverTimezone=UTC
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      validation-timeout: 30000
+  main:
+    allow-circular-references: true
   mail:
     host: smtp.qq.com
     port: 465
